@@ -80,19 +80,19 @@ def send():
         ChatLog.config(foreground="#442265", font=("maroon", 12 ))
     
         res = chatbot_response(msg)
-        ChatLog.insert(END, "Bot: " + res + '\n\n')
+        ChatLog.insert(END, "ITM: " + res + '\n\n')
             
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END)
  
 
 base = Tk()
-base.title("Chatbot ITMU")
+base.title("🤖-ITMU")
 base.geometry("400x550")
 base.resizable(width=FALSE, height=FALSE)
 
 #Create Chat window
-ChatLog = Text(base, bd=0, bg="MistyRose2", height="10", width="100", font="Arial",)
+ChatLog = Text(base, bd=0, bg="#fcf9f9", height="10", width="100", font="Arial",)
 
 ChatLog.config(state=DISABLED)
 
@@ -102,11 +102,11 @@ ChatLog['yscrollcommand'] = scrollbar.set
 
 #Create Button to send message
 SendButton = Button(base, font=("slate gray",12,'bold'), text="Send", width="15", height=7,
-                    bd=0, bg="#32de97", activebackground="#3c9d9b",fg='#ffffff',
-                    command= send )
+                    bd=0, bg="#3c9d9b", activebackground="#3c9d9b",fg='#3c9d9b',
+                    command= send)
 
 #Create the box to enter message
-EntryBox = Text(base, bd=0, bg="blanched almond",width="20", height="7", font="Arial")
+EntryBox = Text(base, bd=0, bg="#ffffff",width="20", height="7", font="Arial")
 #EntryBox.bind("<Return>", send)
 
 

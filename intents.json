@@ -1,7 +1,7 @@
 {"intents": [
         {"tag": "greeting",
          "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","Hi"],
-         "responses": ["Hello, Welcome to ITM University gwalior", "Good to see you again", "Hi there, how can I help?","Hello"],
+         "responses": ["Welcome to ITM University gwalior", "Good to see you again", "how can I help?"],
          "context": [""]
         },
         {"tag": "goodbye",
